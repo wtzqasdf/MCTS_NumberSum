@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+h6 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section_result {
+    margin-top: 0.5em;
+    padding: 0 0.5em;
+}
+.result {
+    border: 2px solid black;
+    padding: 0.3em;
+    margin: 0.5em 0;
+}
+.step {
+    display: flex;
+    overflow-x: auto;
+}
+.step b {
+    min-width: 60px;
+    text-align: center;
+}
+.step .expansion {
+    background-color: lightgreen;
+}
+.step .known {
+    background-color: lightblue;
+}
+.step .sum {
+    background-color:black;
+    color:white;
+}
+
+@media (min-width: 961px) {
+    nav {
+        height: 32px;
+        align-items: center;
+    }
+    nav > div {
+        margin: 0 0.5em;
+    }
+    nav > div > input {
+        width: 100px;
+    }
+}
+@media (max-width: 960px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav > div {
+        margin: 0.3em 0;
+    }
+    nav > div > label {
+        display: inline-block;
+        width: 150px;
+    }
+    nav > div > input {
+        width: 100px;
+    }
+}

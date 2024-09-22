@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCTS and NumberSum Sample</title>
+    <script src="/dist/r.js"></script>
+    <link rel="stylesheet" href="/dist/index.css">
+</head>
+<body>
+    <nav id="navigation">
+        <div>
+            <label for="input_learning_rate">Learning Rate</label>
+            <input id="input_learning_rate" type="number" placeholder="0.00 - 1.00" value="0.55" min="0.00" max="1.00">
+        </div>
+        <div>
+            <label for="input_learning_amount">Learning Amount</label>
+            <input id="input_learning_amount" type="number" placeholder="1 - 10000" value="10" min="1" max="10000">
+        </div>
+        <div>
+            <label for="input_show_speed">Show Speed</label>
+            <input id="input_show_speed" type="number" placeholder="1 - 20" value="1" min="1" max="20">
+        </div>
+        <div>
+            <label for="input_actions">Actions</label>
+            <input id="input_actions" placeholder="1,2,3,4" value="1,2,3,4">
+        </div>
+        <div>
+            <label for="input_answer">Answer</label>
+            <input id="input_answer" type="number" placeholder="100" value="100">
+        </div>
+        <div>
+            <button id="btn_start">Start</button>
+            <button id="btn_stop" disabled>Stop</button>
+        </div>
+    </nav>
+    <div id="section_result" class="section_result">
+    </div>
+    <script src="/dist/main.js"></script>
+    <script>
+        requirejs(["main"]);
+    </script>
+</body>
+</html>
